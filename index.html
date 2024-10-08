@@ -31,40 +31,6 @@
         <canvas id="canvas"></canvas>
     </div>
     
-    <!-- Mobile menu -->
-    <div class="mobile-menu">
-        <div class="container">
-            <!--Nav Outer-->
-            <div class="nav-outer clearfix">
-                <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
-                <!-- Main Menu -->
-                <nav class="main-menu">
-                    <div class="navbar-header">
-                        <!-- Toggle Button -->      
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    
-                    <div class="navbar-collapse collapse scroll-nav clearfix">
-                        <ul class="navigation clearfix">
-                            <li class="current"><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#resume">Education</a></li>
-                            <li><a href="#services">Research</a></li>
-                            <li><a href="#work">Teaching Experience</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                         </ul>
-                    </div>
-                </nav>
-                <!-- Main Menu End-->                        
-            </div>
-            <!--Nav Outer End-->            
-        </div>
-    </div>
- 	
     <div class="card-outer">
         <div class="scroll-box">
             <div class="container" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
@@ -81,6 +47,7 @@
                                 <span class="typed-title"></span>
                             </div>
                         </div>
+                        <!-- Deleted the buttons "Download CV" and "Hire Me" -->
                         <ul class="social-icon-two">
                             <li><a href="#"><span class="fa fa-facebook"></span></a></li>
                             <li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -88,112 +55,131 @@
                             <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
                         </ul>
                     </div>
-                    <div class="card-inner-box">
-                        <header class="header wow fadeInLeft" data-wow-duration="1.5s">
-                            <ul class="main-menu">
-                                <li class="active home"><a class="logo" href="#home"><img src="images/logo.png" alt=""></a></li>
-                                <li><a href="#about"><i class="flaticon-social"></i>About</a></li>
-                                <li><a href="#resume"><i class="flaticon-curriculum"></i>Education</a></li>
-                                <li><a href="#services"><i class="flaticon-layers-1"></i>Research</a></li>
-                                <li><a href="#work"><i class="flaticon-tools"></i>Teaching Experience</a></li>
-                                <li><a href="#contact"><i class="flaticon-send-mail"></i>Contact</a></li>
-                            </ul>
-                        </header>
 
-                        <!-- card item -->
-                        <div class="card-home card-item active" id="home" style="background-image:url(images/background/1.jpg)">
-
-                            <div class="card-inner wow fadeInUp" data-wow-duration="2s">
-                                <div class="image"><img src="images/resource/user.jpg" alt=""></div>
-                                <div class="author">
-                                    <h3>Luyang Zhou</h3>
-                                    <div class="designation">
-                                        Hi i’m
-                                        <div class="typing-title">
-                                            <!-- Removed unnecessary items here -->
-                                        </div>
-                                        <span class="typed-title"></span>
+                    <!-- "About Me" section -->
+                    <div class="card-about card-item" id="about" style="background-image:url(images/background/2.jpg)">
+                        <div class="card-inner">
+                            <h4 class="title">About Me</h4>
+                            <div class="text">
+                                I’m a PhD student at the University of York. My research focuses on a CA approach to doctor-patient interaction, especially pediatric consultations. I also explore multimodal conversation analysis, investigating how non-verbal cues, such as gestures and other visual elements contribute to communication in healthcare settings.
+                            </div>
+                            <div class="info-list">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="list-style-one">
+                                            <li><strong>Name:</strong> Luyang Zhou</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="list-style-one">
+                                            <li><strong>Email:</strong> ftb512@york.ac.uk</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <!-- Removed unnecessary buttons here -->
-                                <ul class="social-icon-two">
-                                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                                    <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
-                                    <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
-                                </ul>
                             </div>
-                            
                         </div>
-                        <!-- end item -->
+                    </div>
+                    <!-- End "About Me" section -->
 
-                        <!-- card item -->
-                        <div class="card-about card-item" id="about" style="background-image:url(images/background/2.jpg)">
-                            <div class="card-inner">
-                                <h4 class="title">About Me</h4>
-                                <div class="text">
-                                    I’m a PhD student at the University of York. My research focuses on a CA approach to doctor-patient interaction, especially pediatric consultations. I also explore multimodal conversation analysis, investigating how non-verbal cues, such as gestures and other visual elements contribute to communication in healthcare settings.
+                    <!-- "Education" Section -->
+                    <div class="card-resume card-item" id="resume" style="background-image:url(images/background/2.jpg)">
+                        <div class="card-inner">
+                            <h4 class="title">Education</h4>
+                            <div class="row clearfix">
+                                <div class="timeline-column col-md-6 col-sm-12 col-xs-12">
+                                    <div class="inner">
+                                        <div class="col-header"><h2>Education History</h2></div>
+                                        <div class="timeline-block">
+                                            <div class="inner-box">
+                                                <h4>PhD in Language and Communication</h4>
+                                                <div class="date"><span>2024-present</span> / University of York</div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-block">
+                                            <div class="inner-box">
+                                                <h4>MA in Linguistics (Distinction)</h4>
+                                                <div class="date"><span>2022-2023</span> / Newcastle University</div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-block">
+                                            <div class="inner-box">
+                                                <h4>BA in English</h4>
+                                                <div class="date"><span>2018-2022</span> / Ocean University of China</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="info-list">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <ul class="list-style-one">
-                                                <li><strong>Name:</strong>  Luyang Zhou</li>
-                                            </ul>
+                                
+                                <div class="timeline-column col-md-6 col-sm-12 col-xs-12">
+                                    <div class="inner">
+                                        <div class="col-header"><h2>Experience</h2></div>
+                                        <div class="timeline-block">
+                                            <div class="inner-box">
+                                                <h4>YorCCA Committee Member</h4>
+                                                <div class="date"><span>2024-Present</span> / University of York</div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <ul class="list-style-one">
-                                                <li><strong>Email:</strong>  ftb512@york.ac.uk</li>
-                                            </ul>
+                                        <div class="timeline-block">
+                                            <div class="inner-box">
+                                                <h4>Student Representative</h4>
+                                                <div class="date"><span>2022-2023</span> / Newcastle University</div>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-block">
+                                            <div class="inner-box">
+                                                <h4>Research Assistant in Child Language Acquisition</h4>
+                                                <div class="date"><span>2023</span> / Newcastle University</div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>                                    
+                                </div>
                             </div>
                         </div>
-                        <!-- end item -->
+                    </div>
+                    <!-- End "Education" Section -->
 
-                        <!-- card item -->
-                        <div class="card-resume card-item" id="resume" style="background-image:url(images/background/2.jpg)">
-                            <div class="card-inner">
-                                <h4 class="title">Education</h4>
-                                <div class="row clearfix">
-                                    <!--Column-->
-                                    <div class="timeline-column col-md-6 col-sm-12 col-xs-12">
-                                        <div class="inner">
-                                            <div class="col-header"><div class="icon-box"><div class="icon-inner"><div class="icon"><span class="flaticon-book"></span></div></div></div> <h2>Education History</h2></div>
-                                            
-                                            <!--Timeline Block-->
-                                            <div class="timeline-block">
-                                                <div class="inner-box">
-                                                    <h4>PhD in Language and Communication</h4>
-                                                    <div class="date"><span>2024-Present</span> / University of York</div>
-                                                </div>
-                                            </div>
+                    <!-- Renamed "Research" section -->
+                    <div class="card-services card-item" id="services" style="background-image:url(images/background/2.jpg)">
+                        <div class="card-inner">
+                            <h4 class="title">Research</h4>
+                            <!-- Deleted all elements in this section -->
+                        </div>
+                    </div>
+                    
+                    <!-- Renamed "Teaching Experience" section -->
+                    <div class="card-projects card-item" id="work" style="background-image:url(images/background/2.jpg)">
+                        <div class="card-inner">
+                            <h4 class="title">Teaching Experience</h4>
+                            <!-- Deleted all elements (pictures and words) in this section -->
+                        </div>
+                    </div>
 
-                                            <!--Timeline Block-->
-                                            <div class="timeline-block">
-                                                <div class="inner-box">
-                                                    <h4>MA in Linguistics (Distinction)</h4>
-                                                    <div class="date"><span>2022-2023</span> / Newcastle University</div>
-                                                </div>
-                                            </div>
+                    <!-- Contact section -->
+                    <div class="card-contact card-item" id="contact" style="background-image:url(images/background/2.jpg)">
+                        <div class="card-inner">
+                            <h3 class="title">Contact</h3>
+                            <h4>Contact Me</h4>
+                            <div class="row clearfix">
+                                <div class="col-md-6">
+                                    <ul class="list-style-two">
+                                        <li><span class="icon flaticon-signs"></span>Vanrugh College, the Department of Language and Linguistic Science, University of York, YO10 5DD</li>
+                                        <li><span class="icon flaticon-note-1"></span>ftb512@york.ac.uk</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- "Contact Me" Form remains as is -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End pagewrapper-->
 
-                                            <!--Timeline Block-->
-                                            <div class="timeline-block">
-                                                <div class="inner-box">
-                                                    <h4>BA in English</h4>
-                                                    <div class="date"><span>2018-2022</span> / Ocean University of China</div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                    <!--Column-->
-                                    <div class="timeline-column col-md-6 col-sm-12 col-xs-12">
-                                        <div class="inner">
-                                            <div class="col-header"><div class="icon-box"><div class="icon-inner"><div class="icon"><span class="flaticon-case"></span></div></div></div> <h2>Experience</h2></div>
-                                            
-                                            <!--Timeline Block-->
-                                            <div
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
