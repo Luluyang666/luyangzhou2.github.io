@@ -1936,3 +1936,7 @@ img{
     opacity: 1 !important;
     transform: translateX(10px);
 }
+
+body {
+    color: #000000;
+}
