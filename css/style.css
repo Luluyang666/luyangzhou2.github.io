@@ -1035,7 +1035,7 @@ img{
     font-weight: 600;
     color: #000000; /* 黑色标题 */
     margin-bottom: 30px;
-    text-align: center;
+    text-align: left;
     padding-bottom: 15px;
     border-bottom: 2px solid #e5e5e5; /* 下方的分隔线 */
 }
