@@ -6,9 +6,9 @@
 3. Global
 4. Header
 5. About
-6. Resume
-7. Services
-8. Works
+6. Education
+7. Teaching
+8. Research
 9. Blog
 10. Contact
 **********************************************/
@@ -683,7 +683,7 @@ img{
 .card-about .title {
 	font-size: 22px;
 	font-weight: 500;
-	color: #222;
+	color: #000000;
 	margin-bottom: 20px;
 }
 
@@ -709,7 +709,7 @@ img{
 }
 
 .card-about .list-style-one li strong {
-	color: #222;
+	color: #000000;
 }
 
 .skill-section .row{
@@ -745,7 +745,7 @@ img{
     top: 50%;
     width: 100%;
     font-size: 20px;
-    color: #222222;
+    color: #000000;
     font-weight: 300;
     line-height: 40px;
     margin-top: -20px;
@@ -755,7 +755,7 @@ img{
 	position: relative;
 	font-size: 15px;
 	line-height: 1.2em;
-	color: #222222;
+	color: #000000;
 	font-weight: 400;
 	text-align:  center;
 	font-family:  'Work Sans', sans-serif;
@@ -775,7 +775,7 @@ img{
 	position: relative;	
 	font-size: 18px;
 	line-height: 28px;
-	color: #555555;
+	color: #000000;
 	font-weight: 300;
 	margin-top: 15px;
 }
@@ -784,7 +784,7 @@ img{
 /*** 
 
 ====================================================================
-	Resume Section
+	Education Section
 ====================================================================
 
 ***/
@@ -927,7 +927,7 @@ img{
 /*** 
 
 ====================================================================
-	Services Section
+	Teaching Section
 ====================================================================
 
 ***/
@@ -1016,167 +1016,78 @@ img{
 /*** 
 
 ====================================================================
-	Projects Section
+	Research Section
 ====================================================================
 
 ***/
 
+/* 整体研究卡片部分 */
 .card-projects {
-	padding: 50px 50px;
+    padding: 50px 50px;
+    background-color: #ffffff; /* 设置白色背景 */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
 }
 
+/* 研究部分的标题样式 */
 .card-projects .title {
-    font-size: 22px;
-    font-weight: 500;
-    color: #222;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000; /* 黑色标题 */
     margin-bottom: 30px;
+    text-align: center;
     padding-bottom: 15px;
-    border-bottom: 1px solid #e5e5e5;
-    margin-top: -9px;
+    border-bottom: 2px solid #e5e5e5; /* 下方的分隔线 */
 }
 
+/* 研究描述块 */
 .projects-block {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 40px; /* 研究描述块之间的间距 */
+    padding: 20px;
+    border: 1px solid #e0e0e0; /* 边框 */
+    border-radius: 8px; /* 圆角效果 */
+    transition: background-color 0.3s ease;
 }
 
-.projects-block .inner-box {
-    position: relative;
+/* 悬停时的效果 */
+.projects-block:hover {
+    background-color: #f9f9f9; /* 悬停时改变背景色 */
 }
 
-.projects-block .image img {
-    width: 100%;
-    transition: .5s ease;
-}
-
-.projects-block:hover .image img {
-	transform: scale(1.15);
-}
-
-.projects-block .image::before {
-    background: rgba(145, 71, 255, 0.90);
-    bottom: 0px;
-    content: "";
-    left: 0px;
-    opacity: 0;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    z-index: 9;
-    transition: all 0.4s ease-in-out 0s;
-}
-
-.projects-block:hover .image::before {
-    opacity: 1;
-}
-
-.projects-block .image {
-    position: relative;
-    border-radius:  5px;
-    overflow:  hidden;
-}
-
-.projects-block .overlay a {
-    background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
-    border-radius: 50%;
-    color: #9147ff;
-    font-size: 20px;
-    height: 60px;
-    line-height: 60px;
-    opacity: 0;
-    position: absolute;
-    text-align: center;
-    transform: translateX(-50%) translateY(-50%) scale(0.6);
-    transition: all 0.4s ease 0s;
-    width: 60px;
-}
-
-.projects-block .overlay a:hover {
-    background: rgba(255, 255, 255, .8) none repeat scroll 0 0;
-    color: #000;
-}
-
-.projects-block:hover .overlay a {
-    opacity: 1;
-    transform: translateX(-50%) translateY(-50%) scale(1);
-}
-
-.projects-block .overlay {
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all 0.5s ease 0s;
-    z-index: 10;
-}
-
-.projects-block:hover .overlay {
-    opacity: 1;
-}
-
-.projects-block .caption-title {
-    bottom: 20px;
-    left: 20px;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.3s ease-in-out 0s;
-    z-index: 12;
-}
-
-.projects-block:hover .caption-title {
-    opacity: 1;
-}
-
+/* 研究项目的标题 */
 .projects-block .caption-title h3 {
-    color: #fff;
     font-size: 20px;
     font-weight: 500;
-    text-transform: capitalize;
-    transform: translateY(15px);
-    transition: all 0.4s ease-in-out 0s;
+    color: #000000; /* 黑色标题 */
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* 悬停时颜色渐变 */
 }
 
-.projects-block .caption-title h3 a {
-    color: #fff;
+/* 研究项目标题悬停时的颜色变化 */
+.projects-block:hover .caption-title h3 {
+    color: #9147ff; /* 悬停时改变为紫色 */
 }
 
-.projects-block:hover .caption-title h3,
-.projects-block:hover .caption-title span {
-    transform: translateX(0px);
-}
-
+/* 研究项目的期刊和年份描述 */
 .projects-block .caption-title span {
-    color: #fff;
-    display: inline-block;
-    font-size: 15px;
-    line-height: 16px;
-    transform: translateY(15px);
-    transition: all 0.4s ease-in-out 0s;
-    text-transform: capitalize;
+    font-size: 16px;
+    color: #777777; /* 灰色文本 */
+    display: block;
+    margin-bottom: 10px;
 }
 
-.projects-block .caption-title-two {
-    padding-top: 15px;
-    padding-left:  20px;
-    padding-bottom:  20px;
-    box-shadow: 0 0 20px 1px #0000001f;
+/* 研究项目的详细描述 */
+.projects-block .caption-title p {
+    font-size: 16px;
+    color: #555555; /* 中灰色文本 */
+    line-height: 1.6em;
+    margin-bottom: 0;
 }
 
-.projects-block .caption-title-two h3 a {
-    color: #222;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-.projects-block .caption-title-two span {
-    font-size: 15px;
-    line-height: 16px;
-    font-weight: 500;
-    text-transform: capitalize;
+/* 研究项目卡片内部的间距 */
+.inner-box {
+    padding: 20px;
 }
 
 /*** 
