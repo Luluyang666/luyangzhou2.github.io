@@ -61,7 +61,7 @@ font-family: 'Work Sans', sans-serif;*/
 
 body {
 	font-size:15px;
-	color:#777777;
+	color:#000000;
 	line-height:1.7em;
 	font-weight:400;
 	background:#ffffff;
@@ -1937,6 +1937,4 @@ img{
     transform: translateX(10px);
 }
 
-body {
-    color: #000000;
-}
+
